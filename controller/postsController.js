@@ -63,7 +63,7 @@ const addPost = async (req, res) => {
 
 const updatePost = async (req, res) => {
     try{
-        const {id} = req.params;
+        const {id} = req.params;    
         const {title, content} = req.body
         const loggedIn = req.user.id
 
